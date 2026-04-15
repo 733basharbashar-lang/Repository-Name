@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استكشف | لوحة تحكم المخترعين</title>
+    <style>
+        :root { --primary: #38bdf8; --bg: #0f172a; --card: #1e293b; --text: #f8fafc; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 20px; }
+        header { border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: var(--card); border-radius: 15px; padding: 20px; border: 1px solid #334155; transition: 0.3s; }
+        .card:hover { border-color: var(--primary); transform: translateY(-5px); }
+        .tag { background: var(--primary); color: var(--bg); padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+        .stats { display: flex; gap: 15px; margin-top: 15px; color: var(--primary); font-size: 0.9rem; }
+        .btn-post { background: var(--primary); color: var(--bg); border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>منصة اسـتـكـشـف 🔬</h1>
+    <button class="btn-post">نشر اختراع جديد +</button>
+</header>
+
+<div class="grid">
+    <div class="card">
+        <span class="tag">براءة اختراع</span>
+        <h3>نظام توليد الطاقة الحركية</h3>
+        <p>مشروع بحثي مقدم من الطالب: بشار التميمي. يعتمد على قوانين الجذب الميكانيكي لتحويل الطاقة.</p>
+        <div class="stats">
+            <span>❤️ 124 إعجاب</span>
+            <span>💬 18 تعليق</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <span class="tag">مجموعة دراسية</span>
+        <h3>نواة الفيزياء الحديثة</h3>
+        <p>مجموعة مخصصة لمناقشة تطبيقات الكود المصدري في الفيزياء البرمجية.</p>
+        <div class="stats">
+            <span>👥 45 عضو</span>
+            <span>📅 أنشئت في 2026</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <span class="tag">تحديث نظام</span>
+        <h3>خوارزمية التصفية (Filtered Feed)</h3>
+        <p>تم تفعيل نظام التصفية الذكي للمنشورات العلمية بنجاح بناءً على نوع المادة.</p>
+    </div>
+</div>
+
+<script>
+    console.log("نظام استكشف يعمل.. النواة البرمجية (Django) جاهزة للربط.");
+</script>
+</body>
+</html>
